@@ -1,0 +1,51 @@
+.one {
+    float:left;
+    width: 50%;
+    height:150px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    background: red;
+}
+
+.two {
+    float:left;
+    width: 50%;
+    height:150px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    background: blue;
+}
+
+.three {
+    clear:both;
+    height:150px;
+    width:100%;
+    border: 1px solid green;
+    box-sizing: border-box;
+    background: yellow;
+}
+
+.main {
+    clear :both;
+    height:150px;
+    border: 1px solid green;
+    background: green;
+}
+
+.four {
+    float:left;
+    width: 50%;
+    height:150px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    background: gray;
+}
+
+.five {
+    float:left;
+    width: 50%;
+    height:150px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    background: black;
+}
