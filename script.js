@@ -9,6 +9,6 @@ var goods = [
 ]
 
 function make() {
-    contain.addEventListener("click", contain.innerHTML=, false);
+    contain.addEventListener("click", contain.innerHTML="hhh", false);
 }
   
