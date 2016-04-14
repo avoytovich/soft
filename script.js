@@ -9,6 +9,15 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('#button_useful_links').click(function() {
+        $('#useful_links').show();
+        $('.background').css('opacity','0.5');
+        $('#useful_links').animate({top: '200px', left: '300px',  width: '700px', height: '390px'}, 'slow');
+        $('#often').show('slow');
+    });
+});
+
 $(document).ready(function(){
     $('#button_about_me_close').click(function() {
         $('#about_me').animate({top: '100px', left: '200px',  width: '0px', height: '0px'}, 'fast');
@@ -19,6 +28,14 @@ $(document).ready(function(){
         $('.background').css('opacity','1');
     });
 });    
+
+$(document).ready(function(){
+    $('#button_useful_links_close').click(function() {
+        $('#useful_links').animate({top: '500px', right: '200px',  width: '0px', height: '0px'}, 'fast');
+        $('#useful_links').hide();
+        $('.background').css('opacity','1');
+    });
+});
 
 $(document).ready(function() {
     $('.skills').click(function() {
@@ -34,3 +51,4 @@ $(document).ready(function() {
         $('#bootstrap').html('bootstrap');
     });
 })
+
