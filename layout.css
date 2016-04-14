@@ -19,30 +19,40 @@
     position: absolute;
     top: 100px;
     left:200px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 #button_facebook {
     position: absolute;
     top: 100px;
     right:200px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 #button_google_plus {
     position: absolute;
     top: 100px;
     right:300px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 #button_email {
     position: absolute;
     top: 100px;
     right:400px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 #button_useful_links {
     position: absolute;
     top: 500px;
     right:200px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 #about_me {
@@ -50,8 +60,8 @@
     position: absolute;
     top: 100px;
     left: 200px;
-    width: 700px;
-    height: 390px;
+    width: 0px;
+    height: 0px;
     overflow-y: scroll;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     border-radius: 20px;
@@ -63,6 +73,8 @@
     position: absolute;
     top: 10px;
     right:10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 #about_me .my_foto {
@@ -73,19 +85,15 @@
     border: 1px solid white;
 }
 
-.name, .goal {
+.name {
     float: left;
     display: none;
-    width: 45%;
+    width: 65%;
     margin: 10px;
-    color: white;
+    color: black;
     font-size: 21px;
     text-transform: uppercase;
-    text-align: center;
-    border-radius: 20px;
-    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em black;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-    background: white;
+    text-align: left;
 }
 
 .soft {
@@ -99,11 +107,9 @@
 }
 
 .skills {
-    float: left;
-    width: 45%;
-    margin: 10px;
-    text-transform: uppercase;
-    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 200px;
     border-radius: 20px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
@@ -123,9 +129,12 @@
 }
 
 .align {
-    float: left;
-    width: 45%;
+    position: absolute;
+    top: 200px;
+    left: 800px;
     margin: 10px;
+    font-size: 16px;
+    text-align: center;
 }
 
 #html, #css, #javascript, #jQuery, #bootstrap {
@@ -164,9 +173,9 @@
     display: none;
     position: absolute;
     top: 500px;
-    right: 200px;
-    width: 700px;
-    height: 390px;
+    left: 1000px;
+    width: 0px;
+    height: 0px;
     overflow-y: scroll;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     border-radius: 20px;
@@ -178,13 +187,27 @@
     position: absolute;
     top: 10px;
     right:10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 #often {
-    margin: 10px;
-    font-size: 16px;
+    margin-top: 20px;
+    width: 45%;
+    color: white;
+    font-size: 21px;
     text-align: left;
+    line-height: 2.1;
 }
+
+#often li a {
+    text-transform: uppercase;
+    color: black;
+}
+
+
+
+
 
 
 
