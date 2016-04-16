@@ -2,16 +2,23 @@
 $(document).ready(function() {
     $('#button_about_me').click(function() {
         $('#about_me').show();
-        $('.background').css('opacity','0.1');
+        $('.background').css('opacity','0.3');
         $('#about_me').animate({top: '100px', left: '200px',  width: '900px', height: '700px'}, 'slow');
         $('.name').show('slow');
+        $(".p_one").fadeIn('slow');
+        $(".p_two").fadeIn(1000);
+        $(".p_tree").fadeIn(2000);
+        $(".p_four").fadeIn(3000);
+        $(".p_five").fadeIn(4000);
+        $(".p_six").fadeIn(5000);
+        $(".p_seven").fadeIn(6000);
     });
 });
 
 $(document).ready(function() {
     $('#button_useful_links').click(function() {
         $('#useful_links').show();
-        $('.background').css('opacity','0.1');
+        $('.background').css('opacity','0.3');
         $('#useful_links').animate({top: '100px', left: '200px',  width: '900px', height: '700px'}, 'slow');
         $('#often').show('slow');
     });
@@ -25,6 +32,7 @@ $(document).ready(function(){
         $('#html, #css, #javascript, #jQuery, #bootstrap').css('width','0%');
         $('#html, #css, #javascript, #jQuery, #bootstrap').html('');
         $('.background').css('opacity','1');
+        $('.p_one, .p_two, .p_tree, .p_four, .p_five, .p_six, .p_seven').fadeOut('fast');
     });
 });    
 
@@ -50,6 +58,17 @@ $(document).ready(function() {
         $('#jQuery').html('jQuery');
         $('#bootstrap').animate({width: '200px'}, 'slow');
         $('#bootstrap').html('Bootstrap');
+        $(".start_up").slideToggle(10000);
     });
-})
+});
+
+
+
+
+
+
+
+
+
+
 
