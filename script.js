@@ -62,8 +62,33 @@ $(document).ready(function() {
     });
 });
 
+$(function () {
+    var pic = $('.pictures');
+    var backgrounds = [
+      'url(images/bike.jpg)', 
+      'url(images/board.jpg)', 
+      'url(images/Certificate.jpg)', 
+      'url(images/contact.jpg)', 
+      'url(images/group.jpg)', 
+      'url(images/hand.jpg)', 
+      'url(images/heart.jpg)', 
+      'url(images/icon.jpg)', 
+      'url(images/marketing.jpg)', 
+      'url(images/objectives.jpg)', 
+      'url(images/programming.jpg)', 
+      'url(images/seo.jpg)'];
+    var current = 0;
 
+    function nextBackground() {
+        pic.css(
+            'background',
+        backgrounds[current = ++current % backgrounds.length]);
 
+        setTimeout(nextBackground, 5000);
+    }
+    setTimeout(nextBackground, 5000);
+    body.css('background', backgrounds[0]);
+});
 
 
 
