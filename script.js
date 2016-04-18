@@ -1,24 +1,32 @@
 
 $(document).ready(function() {
     $('#button_about_me').click(function() {
+        $('.start_up, #contact').hide('fast')
         $('#about_me').show();
-        $('.background').css('opacity','0.3');
+        $('.background').css('opacity','0.0');
         $('#about_me').animate({top: '400px', left: '200px',  width: '900px', height: '700px'}, 'slow');
         $('.name').show('slow');
         $(".p_one").fadeIn('slow');
-        $(".p_two").fadeIn(1000);
-        $(".p_tree").fadeIn(2000);
-        $(".p_four").fadeIn(3000);
-        $(".p_five").fadeIn(4000);
-        $(".p_six").fadeIn(5000);
-        $(".p_seven").fadeIn(6000);
+        $(".p_two").fadeIn(1500);
+        $(".p_tree").fadeIn(3000);
+        $(".p_four").fadeIn(4500);
+        $(".p_five").fadeIn(6000);
+        $(".p_six").fadeIn(7500);
+        $(".p_seven").fadeIn(9000);
+    });
+});
+
+$(document).ready(function() {
+    $('#button_contact').click(function () {
+        $("#contact").slideToggle(5000);
     });
 });
 
 $(document).ready(function() {
     $('#button_useful_links').click(function() {
+        $('.start_up, #contact').hide('fast')
         $('#useful_links').show();
-        $('.background').css('opacity','0.3');
+        $('.background').css('opacity','0.0');
         $('#useful_links').animate({top: '400px', left: '200px',  width: '900px', height: '700px'}, 'slow');
         $('#often').show('slow');
     });
@@ -38,7 +46,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#button_useful_links_close').click(function() {
-        $('#useful_links').animate({top: '500px', left: '200px',  width: '0px', height: '0px'}, 'fast');
+        $('#useful_links').animate({top: '400px', left: '200px',  width: '0px', height: '0px'}, 'fast');
         $('#useful_links').hide();
         $('#html, #css, #javascript, #jQuery, #bootstrap').css('width','0%');
         $('#html, #css, #javascript, #jQuery, #bootstrap').html('');
@@ -58,7 +66,8 @@ $(document).ready(function() {
         $('#jQuery').html('jQuery');
         $('#bootstrap').animate({width: '200px'}, 'slow');
         $('#bootstrap').html('Bootstrap');
-        $(".start_up").slideToggle(10000);
+        $('.start_up').slideToggle(10000);
+        $('.audio').show();
     });
 });
 
@@ -89,6 +98,14 @@ $(function () {
     setTimeout(nextBackground, 5000);
     body.css('background', backgrounds[0]);
 });
+
+
+document.getElementById('skills').addEventListener('click', my);
+
+function my () {
+    var audio = document.getElementById('audio');
+    audio.play();
+}
 
 
 

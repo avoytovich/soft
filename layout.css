@@ -17,10 +17,31 @@
     background: url('images/entrepreneur-696966_1920.jpg');
 }
 
+#contact {
+    display:none;
+    width: 1200px;
+    height:400px;
+    background: url('images/form.jpg');
+}
+
+.footer {
+    position: relative;
+    top: 750px;
+    width: 1200px;
+    height:100px;
+    text-align: center;
+    background: url('images/contact_form.jpg') bottom;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
+
 #button_about_me {
     position: absolute;
     top: 100px;
-    left:200px;
+    left:100px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     border-radius: 20px;
 }
@@ -28,7 +49,7 @@
 #button_facebook {
     position: absolute;
     top: 100px;
-    right:200px;
+    right:100px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     border-radius: 20px;
 }
@@ -36,7 +57,7 @@
 #button_google_plus {
     position: absolute;
     top: 100px;
-    right:300px;
+    right:200px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     border-radius: 20px;
 }
@@ -44,15 +65,39 @@
 #button_email {
     position: absolute;
     top: 100px;
-    right:400px;
+    right:300px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     border-radius: 20px;
+}
+
+#button_CV {
+    position: absolute;
+    top: 100px;
+    right:500px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+#button_contact {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#button_web_project {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
 #button_useful_links {
     position: absolute;
     top: 500px;
-    left:200px;
+    left:100px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     border-radius: 20px;
 }
@@ -136,10 +181,17 @@
     background: url('images/Certificate.jpg') center no-repeat #e5f3ff;
 }
 
+.audio {
+    display: none;
+    position: relative;
+    top: 20px;
+    left: 800px;
+}
+
 .skills {
     position: absolute;
     top: 200px;
-    left: 200px;
+    left: 100px;
     border-radius: 20px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
@@ -202,7 +254,7 @@
 #useful_links {
     display: none;
     position: absolute;
-    top: 500px;
+    top: 100px;
     left: 200px;
     width: 0px;
     height: 0px;
@@ -222,7 +274,7 @@
 }
 
 #often {
-    margin-top: 20px;
+    margin: 20px;
     width: 45%;
     color: white;
     font-size: 21px;

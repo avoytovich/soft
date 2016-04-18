@@ -40,13 +40,37 @@
                 </a>
             </div> 
            <div class="start_up "></div>
+           <div id="contact">
+               <form>
+                   <div class="form-group">
+                       <label for="exampleInputName2">Name</label>
+                       <input type="text" class="form-control" id="exampleInputName2" placeholder="your name">
+                   </div>
+                   <div class="form-group">
+                       <label for="exampleInputEmail2">Email</label>
+                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="vander@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="3" id="comment"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                    </div>
+                    <button type="submit" class="btn btn-default">Send invitation</button>
+               </form>
+           </div>
            <div class="background">
-               <button type="button" class="btn btn-default" id="button_about_me"><img src="images/android-icon-36x36.png" alt="badge"> About me</button>   
+               <a href="#about_me"><button type="button" class="btn btn-default" id="button_about_me"><img src="images/android-icon-36x36.png" alt="badge"> About me</button></a>   
+               <a href="images/CV_Andrew Voytovych (English).doc"><button type="button" class="btn btn-default" id="button_CV"><img src="images/android-icon-36x36.png" alt="badge">CV.doc</button></a>
                <a href="https://www.facebook.com/levanwork" target="_blank"><button type="button" class="btn btn-default" id="button_facebook"><img src="images/f36x36.png" alt="facebook"></button></a>
                <a href="https://plus.google.com/u/0/114747635061614766710/posts" target="_blank"><button type="button" class="btn btn-default" id="button_google_plus"><img src="images/g+36x36.png" alt="google+"></button></a>
                <a href="mailto:levanwork@ukr.net" target="_blank"><button type="button" class="btn btn-default" id="button_email"><img src="images/e36x36.png" alt="email"></button></a>
-               <button type="button" class="btn btn-default" id="button_useful_links"><img src="images/android-icon-36x36.png" alt="badge"> Useful links</button>
-               <button type="button" class="skills btn btn-default"><img src="images/android-icon-36x36.png" alt="badge">FRONT-end-DEVELOPMENT'S skills:</button>
+               <a href="#contact"><button type="button" class="btn btn-default" id="button_contact"><img src="images/android-icon-36x36.png" alt="badge"> Contact</button></a>
+               <a href="http://avoytovich.github.io/hard/"><button type="button" class="btn btn-default" id="button_web_project"><img src="images/android-icon-36x36.png" alt="badge"> Web project</button></a>
+               <a href="#useful_links"><button type="button" class="btn btn-default" id="button_useful_links"><img src="images/android-icon-36x36.png" alt="badge"> Useful links</button></a>
+               <button type="button" class="skills btn btn-default" id="skills"><img src="images/android-icon-36x36.png" alt="badge">FRONT-end-DEVELOPMENT'S skills:</button>
                <div class="align">
                    <p id="html"></p>
                    <p id="css"></p>
@@ -55,7 +79,13 @@
                    <p id="bootstrap"></p>
                </div>
                <div class="pictures"></div>
+               <div class="audio">
+                   <audio id="audio" controls>
+                       <source src="images/Freedom.mp3" type="audio/mpeg">
+                   </audio> 
+               </div>
            </div>
+           <div class="footer"></div>
            <div id="about_me">
                <img class="my_foto" src="images/C.png" alt="my Foto">
                <div class="name">
