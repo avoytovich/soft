@@ -1,6 +1,7 @@
-.body {
+body {
     width: 1200px;
     height:750px;
+    margin: auto;
 }
 
 .container {
