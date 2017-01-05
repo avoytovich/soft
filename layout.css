@@ -87,10 +87,18 @@ form {
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
-#button_web_project {
+#button_web_project_one {
     position: absolute;
     top: 400px;
     left: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#button_web_project_two {
+    position: absolute;
+    top: 400px;
+    left: 300px;
     border-radius: 20px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
@@ -287,6 +295,7 @@ form {
     text-transform: uppercase;
     color: black;
 }
+
 
 
 
