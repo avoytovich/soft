@@ -2,34 +2,151 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
         <link rel="icon" type="image/png" sizes="144x144" href="images/android-icon-144x144.png">
         <link rel="stylesheet" type="text/css" href="layout.css">
         <title>portfolio A. Voitovych</title>
     </head>
     <body>
-        <div class="container">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="images/banner.jpg" alt="banner">
+        <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                     <div class="container">
+                         <!-- Brand and toggle get grouped for better mobile display -->
+                         <div class="navbar-header">
+                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false">
+                                 <span class="sr-only">Toggle navigation</span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                             </button>
+                             <a class="navbar-brand" href="https://www.facebook.com/levanwork" target="_blank"><p class="brand">Andrii.Voitovych(<img class="me" src="images/new/me.jpg">)</p></a>
+                         </div>
+                         <!-- Collect the nav links, forms, and other content for toggling -->
+                         <div class="collapse navbar-collapse" id="bs-navbar">   
+                             <ul class="nav navbar-nav navbar-right">
+                                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Useful links<span class="caret"></span></a>
+                                     <ul class="dropdown-menu">
+                                         <li><a href="https://ide.c9.io/avoytovich/soft" target="_blank" >cloud9</a></li>
+                                         <li><a href="https://www.google.com.ua/?gws_rd=ssl" target="_blank">google</a></li>
+                                         <li><a href="https://www.facebook.com/groups/1538760686424077/?ref=bookmarks" target="_blank">facebook</a></li>
+                                         <li><a href="https://mail.ukr.net/classic#msglist,folder=0&page=1" target="_blank">levanwork@ukr.net</a></li>
+                                         <li><a href="https://translate.google.com.ua/?hl=uk#en/uk/use" target="_blank">translate</a></li>
+                                         <li><a href="http://www.w3schools.com/" target="_blank">w3schools</a></li>
+                                     </ul>
+                                 </li>
+                                 <li><button type="button" id="volumePlus" class="btn btn-success navbar-btn"><img class="music" src="images/new/volumePlus.png" alt="music"></button></li>
+                                 <li><button type="button" id="musiclList" class="btn btn-default navbar-btn"><img class="music" src="images/new/music.png" alt="music"></button></li>
+                                 <li><button type="button" id="volumeMinus" class="btn btn-danger navbar-btn"><img class="music" src="images/new/volumeMinus.png" alt="music"></button></li>
+                                 <li><audio id="audio"><source src="music/freedom.mp3" type="audio/mpeg"></audio></li>
+                                 <li><a class="matched">>>></a></li>
+                                 <li><a href="#content">Home</a></li>
+                                 <li><a href="#subContent">Skills</a></li>
+                                 <li><a href="#portfolio">Portfolio</a></li>
+                                 <li><a href="#contact-form">Contact</a></li>
+                             </ul>
+                         </div><!-- /.navbar-collapse -->
+                     </div><!-- /.container-fluid -->
+                 </nav>
+                 <div class="container-fluid" id="body"></div>
+                 <div id="content" class="container-fluid col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                     <h1>Web</h1><hr>
+                     <h2>Developer</h2>
+                     <h5>since Marсh 2016</h5>
+                     <figure>
+                         <a href="https://plus.google.com/u/0/114747635061614766710/posts" target="_blank"><img class="ico" src="images/new/g_plus.png" alt="g_plus"></a>
+                         <a href="https://www.facebook.com/levanwork" target="_blank"><img class="ico" src="images/new/facebook.png" alt="facebook"></a>
+                         <a href="https://www.youtube.com/channel/UCraZnJx_N61baKppeBfpUoA" target="_blank"><img class="ico" src="images/new/youtube.png" alt="youtube"></a>
+                     </figure>
+                     <figure id="portfolio">
+                         <figcaption>projects</figcaption>
+                         <a href="http://avoytovich.github.io/LeVAN/" target="_blank"><img class="icoProject" src="images/new/projectOne.jpg" alt="projectOne"></a>
+                         <a href="http://speedometer.com.ua/" target="_blank"><img class="icoProject" src="images/new/projectTwo.jpg" alt="projectTwo"></a>
+                         <figcaption>achievement</figcaption>
+                         <h5>has successfully completed trainee course in SoftServe <br>IT Academy program HTML5 App Development Fundamentals <br>(HTML/CSS/JavaScript)</h5>
+                         <a href="https://www.freecodecamp.com/fcc828e3fd0" target="_blank"><img class="icoAchievement" src="images/new/freecodecamp.jpg" alt="freecodecamp"></a>
+                         <a href="https://www.codewars.com/users/Andrii.Voitovych" target="_blank"><img class="icoAchievement" src="images/new/codewars.jpg" alt="codewars"></a>
+                         <a href="https://www.codecademy.com/vander82" target="_blank"><img class="icoAchievement" src="images/new/codecademy.jpg" alt="codecademy"></a>
+                     </figure>
+                     
+                     <div id="subContent" class="container-fluid">
+                         <figure class="professionalSkills">
+                             <figcaption class="professionalSkills">PROFESSIONAL SKILLS</figcaption>
+                             <p class="reflection">level of knowledge</p>
+                             <h5>Hint >>> hover on intersting skills:</h5>
+                             <img class="icoSkills" src="images/new/html5.jpg" alt="html5">
+                             <img class="icoSkills" src="images/new/css.jpg" alt="css">
+                             <img class="icoSkills" src="images/new/js.jpg" alt="js">
+                             <img class="icoSkills" src="images/new/bootstrap.jpg" alt="bootstrap">
+                         </figure>
+                         <figure class="professionalSkills">
+                             <p class="reflection">level of knowledge</p>
+                             <h5>Hint >>> hover on intersting skills:</h5>
+                             <img class="icoSkills" src="images/new/jquery.jpg" alt="jquery">
+                             <img class="icoSkills" src="images/new/ajax.jpg" alt="ajax">
+                             <img class="icoSkills" src="images/new/angular.png" alt="angular">
+                         </figure>
+                         <figure class="professionalSkills">
+                             <p class="reflection">level of knowledge</p>
+                             <h5>Hint >>> hover on intersting skills:</h5>
+                             <img class="icoSkills" src="images/new/php.png" alt="php">
+                             <img class="icoSkills" src="images/new/nodejs.jpg" alt="nodejs">
+                             <img class="icoSkills" src="images/new/sql.jpg" alt="sql">
+                         </figure>
+                         </div>
+                         
+                         <h3 id="contact">Contact</h3>
+                     <form id="contact-form" class="form-horizontal" action="//formspree.io/levanwork@ukr.net" method="post">
+                         <fieldset>
+                             <legend>Personal information:</legend>
+                             <div class="form-group">
+                                 <div class="col-sm-12">
+                                 <input type="text" class="form-control" name="Name" placeholder="Input your name:" required>
+                                 </div>
+                             </div>
+                             <div class="form-group">
+                                 <div class="col-sm-12">
+                                 <input type="email" class="form-control" name="Email" placeholder="Input your email:" required>
+                                 </div>
+                             </div>
+                             <div class="form-group">
+                                 <div class="col-sm-12">
+                                 <textarea class="form-control" name="Message" cols="30" rows="6" placeholder="Message" required></textarea>
+                                 </div>
+                             </div>
+                             <!-- CONFIG -->
+	                         <input class="hidden" type="text" name="_gotcha">
+	                         <input type="hidden" name="_subject" value="Subject">
+	                         <input type="hidden" name="_cc" value="email@cc.com">
+	                         <!-- /CONFIG -->
+	                         <button type="submit" class="btn btn-primary">Submit</button>
+                          </fieldset>
+                     </form>
+                     
+                     
+                    </div> 
+                 </div>
+                    
+                 
+             <footer class="row">
+                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                 <ol class="carousel-indicators">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                 </ol>
+                 <div class="carousel-inner">
+                     <div class="item active">
+                         <img src="images/new/like.jpg" alt="like">
                     </div>
                     <div class="item">
-                         <img src="images/jquery.png" alt="jquery">
-                    </div>
-                     <div class="item">
-                         <img src="images/arrows.jpg" alt="arrows">
+                         <img src="images/new/love.jpg" alt="javascript">
                     </div>
                     <div class="item">
-                        <img src="images/businessmen.jpg" alt="motivation">
+                         <img src="images/new/contact.jpg" alt="javascript">
                     </div>
                 </div>
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -38,7 +155,26 @@
                 <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
-            </div> 
+            </div>
+                 <a href="#content"><img class="on_top" src="images/new/on_top.png" alt="on_top"></a>
+             </footer>
+             <footer class="row logo">
+                 <p class="my_logo">Copyright © 2017 | Created by <a href="http://avoytovich.github.io/soft/" target="_blank"><img src="images/new/my_logo.png" alt="my_logo">Andrii Voitovych</a></p>
+             </footer>
+        
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>     
+                 <!--
+                 <div class="container-fluid" id="body"></div>
+                 
+             
            <div class="start_up "></div>
            <div id="contact">
                <form>
@@ -81,9 +217,7 @@
                </div>
                <div class="pictures"></div>
                <div class="audio">
-                   <audio id="audio" controls>
-                       <source src="images/Freedom.mp3" type="audio/mpeg">
-                   </audio> 
+                   
                </div>
            </div>
            <div class="footer">
@@ -113,14 +247,35 @@
                    <li><a href="http://www.w3schools.com/" target="_blank">w3schools</a></li>
                </ul>
                <button type="button" class="btn btn-default" id="button_useful_links_close"><img src="images/android-icon-36x36.png" alt="badge">Close</button>
-           </div>
-        </div>
-        
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="script.js"></script>
-    </body>
-</html>
+            </div>
+            
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/banner.jpg" alt="banner">
+                    </div>
+                    <div class="item">
+                         <img src="images/jquery.png" alt="jquery">
+                    </div>
+                     <div class="item">
+                         <img src="images/arrows.jpg" alt="arrows">
+                    </div>
+                    <div class="item">
+                        <img src="images/businessmen.jpg" alt="motivation">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            -->
+           

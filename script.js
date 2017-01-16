@@ -1,111 +1,100 @@
+//JavaScript
 
 $(document).ready(function() {
-    $('#button_about_me').click(function() {
-        $('.start_up, #contact').hide('fast')
-        $('#about_me').show();
-        $('.background').css('opacity','0.0');
-        $('#about_me').animate({top: '400px', left: '200px',  width: '900px', height: '700px'}, 'slow');
-        $('.name').show('slow');
-        $(".p_one").fadeIn('slow');
-        $(".p_two").fadeIn(1500);
-        $(".p_tree").fadeIn(3000);
-        $(".p_four").fadeIn(4500);
-        $(".p_five").fadeIn(6000);
-        $(".p_six").fadeIn(7500);
-        $(".p_seven").fadeIn(9000);
+    $(document).scroll(on_top);
+    
+    function on_top () {
+        $('.on_top').fadeIn(3000, function () {
+        $('.on_top').fadeOut(5000);
     });
-});
-
-$(document).ready(function() {
-    $('#button_contact').click(function () {
-        $("#contact").slideToggle(5000);
-    });
-});
-
-$(document).ready(function() {
-    $('#button_useful_links').click(function() {
-        $('.start_up, #contact').hide('fast')
-        $('#useful_links').show();
-        $('.background').css('opacity','0.0');
-        $('#useful_links').animate({top: '400px', left: '200px',  width: '900px', height: '700px'}, 'slow');
-        $('#often').show('slow');
-    });
-});
-
-$(document).ready(function(){
-    $('#button_about_me_close').click(function() {
-        $('#about_me').animate({top: '400px', left: '200px',  width: '0px', height: '0px'}, 'fast');
-        $('#about_me').hide();
-        $('.name').hide();
-        $('#html, #css, #javascript, #jQuery, #bootstrap').css('width','0%');
-        $('#html, #css, #javascript, #jQuery, #bootstrap').html('');
-        $('.background').css('opacity','1');
-        $('.p_one, .p_two, .p_tree, .p_four, .p_five, .p_six, .p_seven').fadeOut('fast');
-    });
-});    
-
-$(document).ready(function(){
-    $('#button_useful_links_close').click(function() {
-        $('#useful_links').animate({top: '400px', left: '200px',  width: '0px', height: '0px'}, 'fast');
-        $('#useful_links').hide();
-        $('#html, #css, #javascript, #jQuery, #bootstrap').css('width','0%');
-        $('#html, #css, #javascript, #jQuery, #bootstrap').html('');
-        $('.background').css('opacity','1');
-    });
-});
-
-$(document).ready(function() {
-    $('.skills').click(function() {
-        $('#html').animate({width: '300px'}, 'slow');
-        $('#html').html('HTML');
-        $('#css').animate({width: '250px'}, 'slow');
-        $('#css').html('CSS');
-        $('#javascript').animate({width: '200px'}, 'slow');
-        $('#javascript').html('JavaScript');
-        $('#jQuery').animate({width: '200px'}, 'slow');
-        $('#jQuery').html('jQuery');
-        $('#bootstrap').animate({width: '200px'}, 'slow');
-        $('#bootstrap').html('Bootstrap');
-        $('.start_up').slideToggle(10000);
-        $('.audio').show();
-    });
-});
-
-$(function () {
-    var pic = $('.pictures');
-    var backgrounds = [
-      'url(images/bike.jpg)', 
-      'url(images/board.jpg)', 
-      'url(images/Certificate.jpg)', 
-      'url(images/contact.jpg)', 
-      'url(images/group.jpg)', 
-      'url(images/hand.jpg)', 
-      'url(images/heart.jpg)', 
-      'url(images/icon.jpg)', 
-      'url(images/marketing.jpg)', 
-      'url(images/objectives.jpg)', 
-      'url(images/programming.jpg)', 
-      'url(images/seo.jpg)'];
-    var current = 0;
-
-    function nextBackground() {
-        pic.css(
-            'background',
-        backgrounds[current = ++current % backgrounds.length]);
-
-        setTimeout(nextBackground, 5000);
     }
-    setTimeout(nextBackground, 5000);
-    body.css('background', backgrounds[0]);
-});
-
-
-document.getElementById('skills').addEventListener('click', my);
+    
+document.getElementById('musiclList').addEventListener('click', my);
+document.getElementById('volumePlus').addEventListener('click', volumePlus);
+document.getElementById('volumeMinus').addEventListener('click', volumeMinus);
 
 function my () {
     var audio = document.getElementById('audio');
     audio.play();
+    document.getElementById('musiclList').addEventListener('click', me);
 }
+
+function me () {
+    var audio = document.getElementById('audio');
+    audio.pause();
+    document.getElementById('musiclList').removeEventListener('click', me);
+}
+
+function volumePlus () {
+    document.getElementById('audio').volume+=0.1;
+}
+
+function volumeMinus () {
+    document.getElementById('audio').volume-=0.1;
+}
+
+   $(".icoSkills").hover(function () {
+       var temp = $(this).attr("alt"); 
+       switch (temp) {
+           case 'html5':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "70%"},500);
+               $(".reflection").html(temp + " >>> 70%");
+               break;
+           case 'css':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "65%"},500);
+               $(".reflection").html(temp + " >>> 65%");
+               break;
+           case 'js':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "75%"},500);
+               $(".reflection").html(temp + " >>> 75%");
+               break;
+           case 'bootstrap':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "60%"},500);
+               $(".reflection").html(temp + " >>> 60%");
+               break;
+           case 'jquery':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "80%"},500);
+               $(".reflection").html(temp + " >>> 80%");
+               break;
+           case 'ajax':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "55%"},500);
+               $(".reflection").html(temp + " >>> 55%");
+               break;
+           case 'angular':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "50%"},500);
+               $(".reflection").html(temp + " >>> 50%");
+               break;
+           case 'php':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "45%"},500);
+               $(".reflection").html(temp + " >>> 45%");
+               break;
+           case 'nodejs':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "60%"},500);
+               $(".reflection").html(temp + " >>> 60%");
+               break;
+           case 'sql':
+               $(".reflection").html("");
+               $(".reflection").animate({width: "40%"},500);
+               $(".reflection").html(temp + " >>> 40%");
+               break;
+           default:
+               // code
+       }
+   }, function () {
+       $(".reflection").html("level of knowledge");
+       $(".reflection").css("width","100%");
+   });
+
+});
 
 
 

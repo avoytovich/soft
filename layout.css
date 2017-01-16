@@ -1,130 +1,3 @@
-body {
-    width: 1200px;
-    height:750px;
-    margin: auto;
-}
-
-.container {
-    width: 1200px;
-    height:750px;
-    padding: 0px;
-}
-
-.background {
-    position: absolute;
-    width: 1200px;
-    height:750px;
-    margin: auto;
-    background: url('images/entrepreneur-696966_1920.jpg');
-}
-
-#contact {
-    display:none;
-    width: 1200px;
-    height:400px;
-    background: url('images/form.jpg');
-}
-
-.footer {
-    position: relative;
-    top: 750px;
-    width: 1200px;
-    height:100px;
-    text-align: center;
-    background: url('images/contact_form.jpg') bottom;
-}
-
-form {
-    width: 70%;
-    margin: auto;
-}
-
-#button_about_me {
-    position: absolute;
-    top: 100px;
-    left:100px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-}
-
-#button_facebook {
-    position: absolute;
-    top: 100px;
-    right:100px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-}
-
-#button_google_plus {
-    position: absolute;
-    top: 100px;
-    right:200px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-}
-
-#button_email {
-    position: absolute;
-    top: 100px;
-    right:300px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-}
-
-#button_CV {
-    position: absolute;
-    top: 100px;
-    right:500px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-}
-
-#button_contact {
-    position: absolute;
-    top: 300px;
-    left: 100px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-}
-
-#button_web_project_one {
-    position: absolute;
-    top: 400px;
-    left: 100px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-}
-
-#button_web_project_two {
-    position: absolute;
-    top: 400px;
-    left: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-}
-
-#button_useful_links {
-    position: absolute;
-    top: 500px;
-    left:100px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-}
-
-#about_me {
-    display: none;
-    position: absolute;
-    top: 100px;
-    left: 200px;
-    width: 0px;
-    height: 0px;
-    overflow-y: scroll;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-    text-align: center;
-    z-index:10;
-    background: transparent;
-}
 
 #button_about_me_close {
     position: absolute;
@@ -167,17 +40,6 @@ form {
     text-transform: none;
 }
 
-.start_up {
-    display: none;
-    width: 1200px;
-    height: 375px;
-    background: url('images/portfolio.jpg') center no-repeat #2a2d2e;
-}
-
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    margin: auto;
-}
-  
 .pictures {
     position: absolute;
     bottom: 100px;
@@ -295,6 +157,213 @@ form {
     text-transform: uppercase;
     color: black;
 }
+
+
+
+
+#body {
+    margin-top: 50px;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url('images/new/body.jpg');
+    background-size: cover;
+}
+
+#content {
+    margin: 10% 20%;
+    color: #E2D893;
+}
+
+#subContent {
+    margin: 50px auto;
+    opacity: 0.9;
+    color: #2B2301;
+    background-color: #E2D893;
+}
+
+#portfolio {
+    margin-top: 150px;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 17px;
+    color: #2B2301;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #2B2301;
+}
+
+.navbar-default .navbar-nav > li > .matched {
+    color: #2B2301;
+    animation-name: navbar;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes navbar {
+    from {color: #2B2301;}
+    to {color:  #E2D893;}
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
+    color: #E2D893;
+}
+
+.navbar-default {
+    background-image: linear-gradient(to bottom, #5F9DA1 0%, #5F9DA1 100%);
+}
+
+.music {
+    height: 20px;
+}
+
+.me {
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #E2D893;
+}
+
+.navbar-brand {
+    padding: 1px;
+}
+
+h1 {
+    margin-left: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 51px;
+    margin-top: 200px;
+}
+
+h2 {
+    margin-left: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 51px;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 44px;
+}
+
+h4 {
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+figure {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+figcaption {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.ico {
+    opacity: 0.7;
+    width: 7%;
+}
+
+.ico:hover {
+    opacity: 1;
+} 
+
+.icoProject {
+    opacity: 0.7;
+    width: 40%;
+}
+
+.icoProject:hover {
+    opacity: 1;
+    transform: scale(1.1,1.1);
+} 
+
+.icoAchievement {
+    opacity: 0.7;
+}
+
+.icoAchievement:hover {
+    opacity: 1;
+}
+
+.icoSkills {
+    opacity: 0.7;
+    height: 150px;
+}
+
+.icoSkills:hover {
+    opacity: 1;
+}
+
+.professionalSkills figcaption {
+    margin: 50px auto;
+}
+
+.professionalSkills img:hover {
+    transform: scale(1.1,1.1);
+}
+
+figure img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.reflection {
+    margin: 25px 0px;
+    display: block;
+    width: 100%;
+    color: #E2D893;
+    font-size: 17px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    background-color: #5F9DA1;
+}
+
+#contact {
+    margin-top: 150px;
+}
+
+legend {
+    color: #E2D893;
+}
+
+.on_top {
+    display: none;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    width: 15%;
+}
+
+.my_logo {
+    margin: 10px;
+    text-align: center;
+}
+
+.logo {
+   background-color: #E2D893; 
+}
+
+
+
+
+
+
 
 
 
