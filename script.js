@@ -55,7 +55,7 @@ function volumeMinus () {
            case 'bootstrap':
                $(".reflection").html("");
                $(".reflection").animate({width: "60%"},500);
-               $(".reflection").html(temp + " >>> 60%");
+               $(".reflection").html("b/p" + " > 60%");
                break;
            case 'jquery':
                $(".reflection").html("");
@@ -65,33 +65,33 @@ function volumeMinus () {
            case 'ajax':
                $(".reflection").html("");
                $(".reflection").animate({width: "55%"},500);
-               $(".reflection").html(temp + " >>> 55%");
+               $(".reflection").html(temp + " > 55%");
                break;
            case 'angular':
                $(".reflection").html("");
                $(".reflection").animate({width: "50%"},500);
-               $(".reflection").html(temp + " >>> 50%");
+               $(".reflection").html("ang" + " > 50%");
                break;
            case 'php':
                $(".reflection").html("");
                $(".reflection").animate({width: "45%"},500);
-               $(".reflection").html(temp + " >>> 45%");
+               $(".reflection").html(" > 45%");
                break;
            case 'nodejs':
                $(".reflection").html("");
                $(".reflection").animate({width: "60%"},500);
-               $(".reflection").html(temp + " >>> 60%");
+               $(".reflection").html("node" + " > 60%");
                break;
            case 'sql':
                $(".reflection").html("");
                $(".reflection").animate({width: "40%"},500);
-               $(".reflection").html(temp + " >>> 40%");
+               $(".reflection").html(" > 40%");
                break;
            default:
                // code
        }
    }, function () {
-       $(".reflection").html("level of knowledge");
+       $(".reflection").html("level");
        $(".reflection").css("width","100%");
    });
    

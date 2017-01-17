@@ -359,7 +359,10 @@ legend {
    background-color: #E2D893; 
 }
 
-
+.counter {
+    margin: 50px 50px;
+    text-align: right;
+}
 
 
 

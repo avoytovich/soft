@@ -1,0 +1,72 @@
+h1 {
+    font-size: 27px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 9px;
+}
+
+.ico {
+    width: 17%;
+}
+
+.icoProject {
+    width: 100%;
+}
+
+.icoAchievement {
+    width: 80%;
+}
+
+.icoSkills {
+    height: 40px;
+}
+
+#portfolio {
+    margin-top: 50px;
+}
+
+figcaption {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.reflection {
+    font-size: 11px;
+    text-transform: lowercase;
+}
+
+.professionalSkills figcaption {
+    font-size: 14px;
+}
+
+#contact {
+    margin-top: 50px;
+}
+
+legend {
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
