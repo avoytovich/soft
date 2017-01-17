@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
     $(document).scroll(on_top);
+    date_time('date_time');
     
     function on_top () {
         $('.on_top').fadeIn(3000, function () {
@@ -93,6 +94,35 @@ function volumeMinus () {
        $(".reflection").html("level of knowledge");
        $(".reflection").css("width","100%");
    });
+   
+function date_time(id)
+{
+        date = new Date;
+        year = date.getFullYear();
+        month = date.getMonth();
+        months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        result = 'current time is '+months[month]+' '+year+' '+h+':'+m+':'+s;
+        document.getElementById(id).innerHTML = result;
+        setTimeout(function () {
+            date_time(id);
+        },100);
+        return true;
+}
 
 });
 
